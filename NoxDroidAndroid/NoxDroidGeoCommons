@@ -1,0 +1,9 @@
+Consumer Key: C2fq1JGYSJ7JVTfsOQir
+Consumer Secret: IU7koQxuG1qSVf6E3z7zbR9QRZuBtiC9pCD1uAjM
+Request Token URL http://geocommons.com/oauth/request_token
+Access Token URL http://geocommons.com/oauth/access_token
+Authorize URL http://geocommons.com/oauth/authorize
+We support hmac-sha1 (recommended) as well as plain text in ssl mode.
+
+
+adb shell am start -n dk.itu.noxdroid/dk.itu.noxdroid.NoxDroidSimpleActivity

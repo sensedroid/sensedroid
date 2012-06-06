@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, NoxDroidActivity!</string>
+    <string name="app_name">NoxDroid</string>
+    <string name="noxdroid_service_started">NoxDroid service started</string>
+    <string name="noxdroid_service_stopped">NoxDroid service stopped</string>
+    <string name="local_service_started">Local service has started</string>
+    <string name="local_service_stopped">Local service has stopped</string>
+    <string name="local_service_label">Sample Local Service</string>
+    <string name="activity_local_service_controller">App/Service/Local Service Controller</string>
+    <string name="local_service_controller">This demonstrates how you can implement persistent services that
+        may be started and stopped as desired.</string>
+    <string name="start_service">Start Service</string>
+    <string name="stop_service">Stop Service</string>
+    <string name="activity_local_service_binding">App/Service/Local Service Binding</string>
+    <string name="local_service_binding">This demonstrates how you can connect with a persistent
+        service.  Notice how it automatically starts for you, and play around with the
+        interaction between this and Local Service Controller.</string>
+    <string name="bind_service">Bind Service</string>
+    <string name="unbind_service">Unbind Service</string>
+    <string name="local_service_connected">Connected to local service</string>
+    <string name="local_service_disconnected">Disconnected from local service</string>
+    <string name="noxdroid_service_autostart">NoxDroidService automatic startup</string>
+    <string name="LOCATIONMANAGER_START">LOCATIONMANAGER_START</string>
+    <string name="GPS_SERVICE_ERROR">GPS_SERVICE_ERROR</string>
+    <string name="GPS_UPDATE_INTERVAL">GPS_UPDATE_INTERVAL</string>
+	<string name="SERVER_URL">SERVER_URL</string>
+	<string name="USER_NAME">USER_NAME</string>
+	<string name="USER_ID">USER_ID</string>
+	<string name="IOIO_ENABLED">IOIO_ENABLED</string>
+	<string name="IOIO_NO2_PIN">IOIO_NO2_PIN</string>
+	<string name="IOIO_TEMP_PIN">IOIO_TEMP_PIN</string>
+	<string name="IOIO_LED_GREEN_PIN">IOIO_LED_GREEN_PIN</string>
+	<string name="IOIO_LED_RED_PIN">IOIO_LED_RED_PIN</string>
+	<string name="IOIO_LED_YELLOW_PIN">IOIO_LED_YELLOW_PIN</string>
+	<string name="IOIO_UPDATE_INTERVAL">IOIO_UPDATE_INTERVAL</string>
+	<string name="LOGCAT_TAG">%1$s_%2$s</string>
+	<string name="MSG_REGISTER_CLIENT">MSG_REGISTER_CLIENT</string>
+    <string name="location_service_started">Location service started</string>
+    <string name="location_service_stopped">Location service stopped</string>	
+    <string name="tracks_service_started">Tracks service started</string>
+    <string name="tracks_service_stopped">Tracks service stopped</string>
+    <string name="SKYHOOK_UPDATE_INTERVAL">SKYHOOK_UPDATE_INTERVAL</string>	
+	<string name="no_tracks">No tracks recorded yet</string>
+	<string name="no_track_start_time">No track start time this recording is garbage</string>
+	<string name="no_track_end_time">No track start time this recording is garbage</string>
+	<string name="no_track_sync_flag">No no sync flag is set yet</string>
+	<string name="DIALOG_MSG_NOXDROID_ABOUT">NOxDroid is a device and application for showing air pollution in Copenhagen. \n\nIt works by connecting your phone and a gas sensor attached to a IOIO board.\nThe collected sensor data is used to show a map of pollution levels. \n\nThe project has been made by Pelle Krøgholt, Stine Hartmann Bierre and Andreas Bok Andersen (2011)\n\nMore information available on\nwww.noxdroid.org </string>
+	<string name="DIALOG_MSG_IOIO_HELP">Please check that the IOIO turned on and is connected to the phone.\n\Lack of connection might be caused by too low battery level on the IOIO board. In that case please change its battery.</string>
+	<string name="DIALOG_MSG_EXIT">This will end NOxDroid and stop any ongoing recordings</string>
+	<string name="DIALOG_MSG_LOCATION">Location service is needed to record your trip. Please turn on either GPS or mobile data.</string>
+	<string name="DIALOG_MSG_HELP">All three buttons must be green to be able to start the recording.\n\nPlease check the IOIO connection and make sure you have either GPS turned on or have activated mobile data</string>
+	<string name="DIALOG_MSG_CONNECTIVITY">Click the button to change status of your mobile data connection</string>
+</resources>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentWrapper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    
+    android:padding="0dp"
+    android:layout_margin="0dp"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/l"
+        android:layout_centerHorizontal="true" >
+        
+            <TextView
+        android:id="@+id/btnHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="40dp"
+        android:typeface="normal"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp"
+        android:text=" ?"
+        android:enabled="true"
+        android:clickable="true"
+        android:onClick="btnHelp_onClick"
+        android:textColor="@android:color/white"
+        />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:text="NO2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+             />
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:src="@drawable/circle_green_no_border" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLayoutWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_alignParentBottom="true" >
+        
+        <ImageButton
+            android:id="@+id/imgBtnStart"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:onClick="startTrack"
+            android:scaleType="fitXY"
+            
+            android:src="@drawable/play_disabled" />
+
+        <ImageButton
+            android:id="@+id/imgBtnStop"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:onClick="endTrack"
+            android:scaleType="fitXY"
+            android:src="@drawable/stop"
+            android:visibility="gone" />
+        <RelativeLayout
+            android:id="@+id/relLayoutGPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp" >
+            
+            <ImageButton
+                android:id="@+id/imgBtnGPS"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                android:onClick="imgBtnGPS_onClick"
+                android:scaleType="fitXY"                
+                android:src="@drawable/circle_grey" />
+
+            <ImageView
+                android:id="@+id/imgGPS"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:src="@drawable/gps_status" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relLayoutIOIO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp" >
+
+            <ImageButton
+                android:id="@+id/imgBtnIOIO"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                android:onClick="imgBtnIOIO_onClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/circle_grey" />
+
+            <ImageView
+                android:id="@+id/imgIOIO"
+                android:layout_width="63dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:src="@drawable/ioio_logo2" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relLayoutConnection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp" >
+
+            <ImageButton
+                android:id="@+id/imgBtnConn"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                android:onClick="imgBtnConn_onClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/circle_grey" />
+
+            <ImageView
+                android:id="@+id/imgConn"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:src="@drawable/wifi_signal_white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

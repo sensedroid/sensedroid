@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/hello"
+    />
+<TextView android:textAppearance="?android:attr/textAppearanceLarge" android:id="@+id/txtInfo" android:layout_height="wrap_content" android:text="" android:layout_width="wrap_content"></TextView>
+
+<Button
+    android:id="@+id/button2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Update feed"  />
+
+<Button
+    android:id="@+id/button1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Go IOIO" android:onClick="goIOIO"/>
+
+<Button
+    android:id="@+id/btnStartService"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Start services (NOx|Location|etc)" android:onClick="startService"/>
+    
+    
+<Button
+    android:id="@+id/btnStopService"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Stop services (NOx|Location|etc)" android:onClick="stopService"/>
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="GPS" />
+
+<ToggleButton
+    android:id="@+id/toggleButton1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ToggleButton" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="WIFI" />
+
+<ToggleButton
+    android:id="@+id/toggleButton2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ToggleButton" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="3G" />
+
+<ToggleButton
+    android:id="@+id/toggleButton3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ToggleButton" />
+
+</LinearLayout>

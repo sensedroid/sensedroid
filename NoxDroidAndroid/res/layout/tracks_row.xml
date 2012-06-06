@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+<!--     TODO/NIECETOHAVE - turn into table layout?
+    http://stackoverflow.com/questions/4329175/android-table-layout-formatting-problems
+ -->
+
+<TextView android:id="@+id/trackItemTitle" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:text="Track: "
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+<TextView android:id="@+id/trackItemId" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+    
+<TextView android:id="@+id/trackItemStartTime" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/no_track_start_time"
+    />
+
+<TextView android:id="@+id/trackItemEndTime" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:text="@string/no_track_end_time"
+    />
+
+<TextView android:id="@+id/trackItemUUID" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+<TextView android:id="@+id/trackItemSyncFlagTitle" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:text="Sync state: "
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+<TextView android:id="@+id/trackItemSyncFlag" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/no_track_sync_flag"
+    
+    />    
+    
+
+</LinearLayout>

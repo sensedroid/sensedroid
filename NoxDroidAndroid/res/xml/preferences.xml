@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:key="device_prefs"
+        android:title="User/device Preferences" >
+        <EditTextPreference
+            android:defaultValue="test_user_name"
+            android:key="USER_ID"
+            android:summary="User id  (lowercase no spaces - likely the prefex of your &apos;gmail&apos;) "
+            android:title="User id" />
+        <EditTextPreference
+            android:defaultValue="Test user name"
+            android:key="USER_NAME"
+            android:summary="User name"
+            android:title="User name" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="server_prefs"
+        android:title="Webservice Preferences" >
+        <EditTextPreference
+            android:defaultValue="http://noxdroidcloudengine.appspot.com/add_track"
+            android:key="SERVER_URL"
+            android:summary="Url to data webservice"
+            android:title="Server Url"
+             />
+        <!-- TODO: change android:defaultValue to http://noxdroidcloudengine.appspot.com/add_track 
+        p-test-value http://10.0.1.7:8888/add_track -->
+        <EditTextPreference
+            android:key="api_key"
+            android:summary="Api Key for data webservice"
+            android:title="ApiKey" />
+        <CheckBoxPreference
+            android:key="@string/noxdroid_service_autostart"
+            android:title="@string/noxdroid_service_autostart" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="ioio_prefs"
+        android:title="IOIO Preferences" >
+        <CheckBoxPreference
+            android:defaultValue="1"
+            android:key="IOIO_ENABLED"
+            android:title="IOIO enabled" />
+        <EditTextPreference
+            android:defaultValue="41"
+            android:key="IOIO_NO2_PIN"
+            android:title="IOIO NO2 pin"
+            android:numeric="integer"
+             />
+        <!-- <EditTextPreference
+            android:defaultValue="42"
+            android:key="IOIO_TEMP_PIN"
+            android:title="IOIO Temp pin" />
+        <EditTextPreference
+            android:defaultValue="16"
+            android:key="IOIO_LED_GREEN_PIN"
+            android:title="IOIO Green pin" />
+        <EditTextPreference
+            android:defaultValue="18"
+            android:key="IOIO_LED_YELLOW_PIN"
+            android:title="IOIO Yellow pin" />
+        <EditTextPreference
+            android:defaultValue="20"
+            android:key="IOIO_LED_RED_PIN"
+            android:title="IOIO Red pin" /> -->
+        <EditTextPreference
+            android:defaultValue="2000"
+            android:key="IOIO_UPDATE_INTERVAL"
+            android:numeric="integer"
+            android:title="IOIO Update Interval (ms)" />
+         
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:key="skyhook_prefs"
+        android:title="Skyhook" >
+        <EditTextPreference
+            android:defaultValue="2000"
+            android:key="SKYHOOK_UPDATE_INTERVAL"
+            android:numeric="integer"
+            android:title="Update interval" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="gps_prefs"
+        android:title="GPS" >
+        <EditTextPreference
+            android:defaultValue="10000"
+            android:numeric="integer"
+            android:key="GPS_UPDATE_INTERVAL"
+            android:title="update interval" />
+        <EditTextPreference android:title="GPS delta min" android:defaultValue="10.0" android:key="GPS_DELTA"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:key="NOX_LEVELS" android:title="NOx levels">
+        <EditTextPreference
+            android:defaultValue="40"
+            android:numeric="integer"
+            android:key="NOX_GREEN_UPPER_BOUND"
+            android:title="Green NOx (0-100)" />
+        <EditTextPreference
+            android:defaultValue="60"
+            android:numeric="integer"
+            android:key="NOX_YELLOW_UPPER_BOUND"
+            android:title="Yellow NOx (0-100)" />
+        <EditTextPreference android:title="NOx delta min" android:key="NOX_DELTA_MIN" android:defaultValue="0.5"/>
+    </PreferenceCategory>
+</PreferenceScreen>
