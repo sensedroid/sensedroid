@@ -14,3 +14,13 @@ gen/
 
 # Local configuration file (sdk path, etc)
 local.properties
+
+IOIO/.classpath
+
+IOIO/.project
+
+*.prefs
+
+IOIO/proguard-project.txt
+
+IOIO/project.properties

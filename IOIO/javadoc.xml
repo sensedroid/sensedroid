@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc access="private" author="false" classpath="../IOIOLib/bin/ioiolib.jar;C:\Program Files\Android\android-sdk\tools\support\annotations.jar;../IOIOLibBT/bin/ioiolibbt.jar;../IOIOLibAccessory/bin/ioiolibaccessory.jar" destdir="doc" nodeprecated="true" nodeprecatedlist="true" noindex="true" nonavbar="true" notree="true" packagenames="ioio.lib,ioio.lib.accessory,lmu.ifi.sensedroid,ioio.lib.bluetooth" source="1.6" sourcepath="gen;src" splitindex="false" use="false" version="false"/>
+    </target>
+</project>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SenseDroidActivity!</string>
+    <string name="app_name">SenseDroid</string>
+    <string name="configuremqslot1_text">Configure MQ Slot 1 (Pin 32):</string>
+    <string name="configuremqslot2_text">Configure MQ Slot 2 (Pin 33):</string>
+    <string name="tmp102_text">TMP 102 sensor (PIN 47 SDA, PIN 48 SCL)</string>
+    <string name="looptime_text">Configure Looptime (seconds):</string>
+    <string name="startservice_button">&quot;Start Service&quot;</string>
+    <string name="stopservice_button">Stop Service</string>
+    <string name="configure_button">Configure Service</string>
+    <string name="extra_button">Extra Reading</string>
+	 <string name="debugslot">No Reading</string>
+
+</resources>

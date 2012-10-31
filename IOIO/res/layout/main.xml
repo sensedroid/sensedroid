@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/configuremqslot1_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/configuremqslot1_text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/configuremqslot1_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/configuremqslot2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/configuremqslot2_text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/configuremqslot2_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/temp2_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tmp102_text" />
+
+        <TextView
+            android:id="@+id/looptime_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/looptime_text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <SeekBar
+            android:id="@+id/looptime_seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            />
+
+        <TextView
+            android:id="@+id/looptime_loopValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/startservice_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="startservice"
+                android:text="@string/startservice_button" />
+
+            <Button
+                android:id="@+id/stopservice_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="stopservice"
+                android:text="@string/stopservice_button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/configure_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="configureService"
+                android:text="@string/configure_button" />
+
+            <Button
+                android:id="@+id/extra_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="requestextraReading"
+                android:text="@string/extra_button" />
+
+        </LinearLayout>
+
+              <TextView
+            android:id="@+id/debug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/debugslot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/debugslot"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/debugslot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/debugslot"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/debugslot3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/debugslot"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+</ScrollView>
